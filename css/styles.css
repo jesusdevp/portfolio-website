@@ -12,7 +12,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
   color: #333;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -70,10 +70,6 @@ body {
   height: 91.7vh;
 }
 
-#showcase strong {
-  color: #3693ff;
-}
-
 .showcase-content {
   display: flex;
   flex-direction: column;
@@ -113,4 +109,48 @@ body {
   border: 1px solid #3693ff;
   border-radius: 10px;
   font-weight: bold;
+}
+
+/* Section About*/
+
+#about {
+  padding: 5rem 0;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+#about h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p.lead {
+  margin-bottom: 1rem;
+}
+
+#about .about-content {
+  display: flex;
+}
+
+#about .about-text,
+#about .about-image {
+  flex: 1;
+}
+
+#about .about-text {
+  text-align: justify;
+  margin: auto;
+}
+
+#about .about-image img {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 40px;
+  width: 65%;
+  border-radius: 25%;
+  margin-top: 60px;
 }
