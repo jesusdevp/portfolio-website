@@ -88,3 +88,29 @@ body {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
+
+.showcase-content h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.showcase-content .btn {
+  font-size: 1.5rem;
+  padding: 1rem 10rem;
+  transition: color 0.3s, background 0.3s;
+}
+
+.showcase-content .btn:hover {
+  background: #3693ff;
+  color: #fff;
+}
+
+.btn {
+  color: #3693ff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #3693ff;
+  border-radius: 10px;
+  font-weight: bold;
+}
