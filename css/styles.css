@@ -24,6 +24,11 @@ body {
   color: #3693ff;
 }
 
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
 /* Navbar */
 
 #navbar {
@@ -117,7 +122,8 @@ body {
   padding: 5rem 0;
 }
 
-#about h2 {
+#about h2,
+#skills h2 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 3rem;
@@ -153,4 +159,44 @@ body {
   width: 65%;
   border-radius: 25%;
   margin-top: 60px;
+}
+
+/* Section: Skills */
+
+#skills {
+  padding: 5rem 0;
+}
+
+#skills h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+#skills .boxes {
+  display: flex;
+}
+
+#skills .box {
+  background: #fff;
+  /* flex: 1; */
+  padding: 3rem;
+  margin: 0 3rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #d1d1d1;
+  font-size: 1.3rem;
+}
+
+/* #skills .box i {
+  color: #fff;
+  padding: 1rem;
+  background: #3693ff;
+  border-radius: 50%;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+} */
+
+#skills .box i {
+  color: #3693ff;
+  margin: 0.5rem;
 }
