@@ -71,8 +71,11 @@ body {
 /* Showcase Area */
 
 #showcase {
-  background: url(../images/bg-1.jpg) no-repeat center center/cover;
-  height: 91.7vh;
+  background-image: url("../images/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 2em;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 .showcase-content {
@@ -87,6 +90,7 @@ body {
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.6);
+  height: 102.7vh;
   color: #fff;
 }
 
@@ -119,6 +123,7 @@ body {
 /* Section About*/
 
 #about {
+  height: 100vh;
   padding: 5rem 0;
 }
 
@@ -135,6 +140,7 @@ body {
 }
 
 #about p.lead {
+  display: block;
   margin-bottom: 1rem;
 }
 
@@ -164,6 +170,7 @@ body {
 /* Section: Skills */
 
 #skills {
+  height: 100vh;
   padding: 5rem 0;
 }
 
@@ -175,11 +182,12 @@ body {
 
 #skills .boxes {
   display: flex;
+  margin: 0 auto;
 }
 
 #skills .box {
   background: #fff;
-  /* flex: 1; */
+  flex: 1;
   padding: 3rem;
   margin: 0 3rem;
   border-radius: 10px;
@@ -199,4 +207,78 @@ body {
 #skills .box i {
   color: #3693ff;
   margin: 0.5rem;
+}
+
+/* Section: Portfolio */
+
+#portfolio {
+  background-image: url("../images/portfolio-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 2em;
+  background-attachment: fixed;
+}
+
+.porfolio-bg {
+  height: 81vw;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5rem 0;
+}
+
+#portfolio h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+#portfolio h3 {
+  display: block;
+  margin-right: 1rem;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+#portfolio .boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid: 10px;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+#portfolio .box {
+  background: rgba(54, 147, 255, 0.5);
+  padding: 2rem;
+  align-items: center;
+  margin-right: 1em;
+  margin-bottom: 3rem;
+  border-radius: 15px;
+}
+
+/* #portfolio .box {
+  margin-bottom: 3rem;
+} */
+
+#portfolio .box i {
+  color: #fff;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#portfolio p {
+  color: #fff;
+  display: block;
+  text-align: justify;
+}
+
+#portfolio .btn {
+  margin: 30px auto;
+  transition: color 0.3s, background 0.3s;
+}
+
+#portfolio .btn:hover {
+  background: #3693ff;
+  color: #fff;
 }
